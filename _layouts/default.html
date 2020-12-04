@@ -13,20 +13,23 @@
 
 <body>
     <header class="page-header" role="banner">
-        <h1 class="project-name">{{ site.title }}</h1>
+        <h1 class="project-name">{{ page.title }}</h1>
         <h2 class="project-tagline">
-            {{ site.description }}</h2>
+            {{ page.description }}</h2>
+        {% if page.show_downloads %}
         <a href="{{ site.vector.vector_repo_url }}" class="btn">View source code for Vector on GitHub</a>
         <a href="{{ site.vector.vector_download }}" class="btn">Download Vector Anti-Cheat</a>
+        {% endif %}
+
+        {% if page.show_return %}
+        <a href="./" class="btn">Return to Home Page</a>
+        {% endif %}
     </header>
 
     <main id="content" class="main-content" role="main">
         {{ content }}
 
         <footer class="site-footer">
-            <span class="site-footer-owner"><a href="{{ site.vector.vector_repo_url }}">Vector Anti-Cheat</a> is
-                maintained
-                by <a href="{{ site.vector.maintainer }}">{{ site.vector.maintainer_name }}</a>.</span>
             <span class="site-footer-credits">Made with love by the <a
                     href=https://github.com/orgs/vector-anti-cheat/people>Vector Development Team.</a></span>
         </footer>

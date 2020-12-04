@@ -1,7 +1,4 @@
 theme: jekyll-theme-cayman
-title: Vector Anti-Cheat
-description: Simple, elegant, beautiful Anti-Cheat for Minecraft.
-show_downloads: true
 vector:
   vector_repo_url: https://github.com/vector-anti-cheat/Vector/
   vector_download: https://github.com/downloadsomwhere.jar
