@@ -6,8 +6,6 @@ show_downloads: false
 show_return: true
 ---
 
-[Return to previous page](./)
-
 ## Detected
 
 - Example
