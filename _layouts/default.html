@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+
+    {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+
+<body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+        <h1 class="project-name">{{ page.title }}</h1>
+        <h2 class="project-tagline">
+            {{ page.description }}</h2>
+        <a href="{{ vector.vector_repo_url }}" class="btn">View source code for Vector on GitHub</a>
+        <a href="{{ vector.vector_download }}" class="btn">Download Vector Anti-Cheat</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+        <p>Vector is a Minecraft Anti-Cheat that works with the latest version to ensure that you come across no
+            hackers!</p>
+
+        <footer class="site-footer">
+            <span class="site-footer-owner"><a href="{{ vector.vector_repo_url }}">Vector Anti-Cheat</a> is maintained
+                by <a href="{{ vector.maintainer }}">{{ vector.maintainer_name }}</a>.</span>
+            <span class="site-footer-credits">Made with love by the Vector Development Team./a>.</span>
+        </footer>
+    </main>
+</body>
+
+</html>
